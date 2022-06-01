@@ -1,0 +1,178 @@
+header {
+  display: flex;
+}
+
+.header__container {
+  background: var(--color-white);
+  height: 16rem;
+  margin: auto;
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  /* border-radius: 12rem 12rem 0 0; */
+  
+}
+
+.header__container img {
+  width: 350px;
+  height: 204px;
+  margin: auto 3rem;
+}
+
+.header__container h1 {
+  display: relative;
+  margin: 0 auto;
+  font-size: 7em;
+}
+
+
+/* ===================== MEDIA QUERIES 1916px TO FULL SIZE ===================== */
+
+ @media screen and (min-width: 1916px) {
+  .header__container img {
+    transition: var(--transition);
+  }   
+  .header__container h1 {
+    transition: var(--transition);
+  }
+}
+
+/* ===================== MEDIA QUERIES 1605px to 1916px ===================== */
+
+ @media screen and (max-width: 1915px) {
+  .header__container img {
+    width: 268px;
+    height: 145px;
+    transition: var(--transition);
+}
+
+  .header__container h1 {
+    font-size: 6rem;
+    transition: var(--transition);
+  }
+}
+
+
+/* ===================== MEDIA QUERIES 1395px to 1605px ===================== */
+
+@media screen and (max-width: 1640px) and (min-width: 1395px) {
+  .header__container img {
+    width: 200px;
+    height: 116px;
+    transition: var(--transition);
+}
+
+  .header__container h1 {
+    font-size: 5rem;
+    transition: var(--transition);
+  }
+}
+
+
+/* ===================== MEDIA QUERIES 1025 to 1395px ===================== */
+
+@media screen and (max-width: 1395px) {
+  .header__container{
+    gap: 0;
+  }
+  .header__container img {
+    width: 280px;
+    height: 164px;
+    transition: var(--transition);
+}
+
+  .header__container h1 {
+    font-size: 5.5rem;
+    transition: var(--transition);
+  }
+
+  .header__right-img {
+    display: none;
+  }
+} 
+
+/* ===================== MEDIA QUERIES (MED DEV) 815px to 1025px ===================== */
+
+@media screen and (max-width: 1025px) {
+  .header__container {
+    margin: auto;
+  }
+  .header__container img {  
+    width: 190px;
+    height: 104px;
+    transition: var(--transition);
+    padding-right: 10px;
+}
+
+  .header__container h1 {
+    font-size: 5rem;
+    transition: var(--transition);
+    padding-right: 11px;
+  }
+
+  .header__right-img {
+    display: none;
+  }
+}
+
+/* ===================== MEDIA QUERIES 742px to 845px ===================== */
+
+@media screen and (max-width: 845px) {
+  .header__container img { 
+    margin-left: 60px; 
+    width: 165px;
+    height: 95px;
+    transition: var(--transition);
+}
+
+  .header__container h1 {
+    font-size: 4rem;
+    transition: var(--transition);
+    padding-right: 31px;
+  }
+
+  .header__right-img {
+    display: none;
+  }
+}
+
+/* ===================== MEDIA QUERIES 600px to 742px ===================== */
+
+@media screen and (max-width: 742px) {
+  .header__container img { 
+    margin-left: 20px;
+    margin-right: 0; 
+    width: 165px;
+    height: 95px;
+    transition: var(--transition);
+}
+
+  .header__container h1 {
+    font-size: 3.5rem;
+    transition: var(--transition);
+    padding-right: 31px;
+  }
+
+  .header__right-img {
+    display: none;
+  }
+}
+
+/* ===================== MEDIA QUERIES (SMALL DEVICES) 600px ===================== */
+
+@media screen and (max-width: 600px) {
+  .header__container img {  
+    width: 125px;
+    height: 75px;
+    transition: var(--transition);
+}
+
+  .header__container h1 {
+    font-size: 3.5rem;
+    transition: var(--transition);
+  }
+
+  .header__right-img {
+    display: none;
+  }
+}
